@@ -16,7 +16,7 @@ exports.createPages = async ({ actions }) => {
     // 一覧ページ生成
     createPage({
       path: '/shops',
-      component: require.resolve('./src/templates/shopsIndex.js'),
+      component: require.resolve('./src/templates/ShopsIndex.js'),
       context: {
         shops: data.contents,
       },
@@ -25,16 +25,16 @@ exports.createPages = async ({ actions }) => {
     // 詳細ページ用に、一つずつ details を取得する
     for (const shop of data.contents) {
       // 個別のコンテンツを取得 (imagesなど詳しいデータも含む)
-      const shopDetail = await client.get({
+      const ShopDetail = await client.get({
         endpoint: 'shops',
         contentId: shop.id,
       });
 
       createPage({
         path: `/shops/${shop.slug}`,
-        component: require.resolve('./src/templates/shopDetail.js'),
+        component: require.resolve('./src/templates/ShopDetail.js'),
         context: {
-          shop: shopDetail, // テンプレートにまるごと渡す
+          shop: ShopDetail, // テンプレートにまるごと渡す
         },
       });
     }
