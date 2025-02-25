@@ -9,14 +9,14 @@
  */
 
 require("dotenv").config({
-  path: '.env', 
-});
+  path: ".env",
+})
 
-const adapter = require("gatsby-adapter-netlify").default;
+const adapter = require("gatsby-adapter-netlify").default
 
 module.exports = {
   adapter: adapter({
-    excludeDatastoreFromEngineFunction: false
+    excludeDatastoreFromEngineFunction: false,
   }),
   siteMetadata: {
     title: "Gatsby microCMS Site",

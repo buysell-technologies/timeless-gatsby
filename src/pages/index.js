@@ -10,64 +10,67 @@ const IndexPage = () => {
       {
         "@type": "CollectionPage",
         "@id": "https://timeless-express.com/",
-        "url": "https://timeless-express.com/",
-        "name": "タイムレスエクスプレス - 【タイムレス】の査定システムが 買取事業への参入障壁を解決します",
-        "isPartOf": { "@id": "https://timeless-express.com/#website" },
-        "description": "【タイムレス】の査定システムが 買取事業への参入障壁を解決します",
-        "breadcrumb": { "@id": "https://timeless-express.com/#breadcrumb" },
-        "inLanguage": "ja"
+        url: "https://timeless-express.com/",
+        name: "タイムレスエクスプレス - 【タイムレス】の査定システムが 買取事業への参入障壁を解決します",
+        isPartOf: { "@id": "https://timeless-express.com/#website" },
+        description:
+          "【タイムレス】の査定システムが 買取事業への参入障壁を解決します",
+        breadcrumb: { "@id": "https://timeless-express.com/#breadcrumb" },
+        inLanguage: "ja",
       },
       {
         "@type": "BreadcrumbList",
         "@id": "https://timeless-express.com/#breadcrumb",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "ホーム"
-          }
-        ]
+            position: 1,
+            name: "ホーム",
+          },
+        ],
       },
       {
         "@type": "WebSite",
         "@id": "https://timeless-express.com/#website",
-        "url": "https://timeless-express.com/",
-        "name": "タイムレスエクスプレス",
-        "description": "【タイムレス】の査定システムが 買取事業への参入障壁を解決します",
-        "potentialAction": [
+        url: "https://timeless-express.com/",
+        name: "タイムレスエクスプレス",
+        description:
+          "【タイムレス】の査定システムが 買取事業への参入障壁を解決します",
+        potentialAction: [
           {
             "@type": "SearchAction",
-            "target": {
+            target: {
               "@type": "EntryPoint",
-              "urlTemplate": "https://timeless-express.com/?s={search_term_string}"
+              urlTemplate:
+                "https://timeless-express.com/?s={search_term_string}",
             },
             "query-input": {
               "@type": "PropertyValueSpecification",
-              "valueRequired": true,
-              "valueName": "search_term_string"
-            }
-          }
+              valueRequired: true,
+              valueName: "search_term_string",
+            },
+          },
         ],
-        "inLanguage": "ja"
-      }
-    ]
+        inLanguage: "ja",
+      },
+    ],
   }
 
   useEffect(() => {
-    const fadeElements = document.querySelectorAll('.js_fadeup_trigger')
+    const fadeElements = document.querySelectorAll(".js_fadeup_trigger")
 
     const observerOptions = {
       root: null,
-      rootMargin: '0px 0px -50px 0px',
+      rootMargin: "0px 0px -50px 0px",
       threshold: 0,
     }
 
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fadeup')
+          entry.target.classList.add("fadeup")
         } else {
-          entry.target.classList.remove('fadeup')
+          entry.target.classList.remove("fadeup")
         }
       })
     }, observerOptions)
@@ -81,12 +84,16 @@ const IndexPage = () => {
   return (
     <>
       <Helmet htmlAttributes={{ lang: "ja" }}>
-        <title>タイムレスエクスプレス - 【タイムレス】の査定システムが 買取事業への参入障壁を解決します</title>
-        <meta name="description" content="【タイムレス】の査定システムが 買取事業への参入障壁を解決します" />
+        <title>
+          タイムレスエクスプレス - 【タイムレス】の査定システムが
+          買取事業への参入障壁を解決します
+        </title>
+        <meta
+          name="description"
+          content="【タイムレス】の査定システムが 買取事業への参入障壁を解決します"
+        />
         <meta name="robots" content="noindex, nofollow" />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
 
       {/* ヘッダー */}
@@ -101,7 +108,7 @@ const IndexPage = () => {
               className="img_responsive"
             />
           </div>
-            <div className="sp">
+          <div className="sp">
             <StaticImage
               src="../img/top_img_sp.jpg"
               loading="eager"
@@ -117,7 +124,8 @@ const IndexPage = () => {
         {/* INTROセクション */}
         <section className="intro section">
           <h2 className="section_title">
-            買取事業を<br />
+            買取事業を
+            <br />
             誰でも簡単導入
           </h2>
           <div className="intro_text">
@@ -130,7 +138,8 @@ const IndexPage = () => {
         {/* ベネフィットセクション */}
         <section className="benefit section js_fadeup_trigger">
           <h2 className="section_title">
-            大がかりな設備投資は不要！<br />
+            大がかりな設備投資は不要！
+            <br />
             ブランド買取ビジネスをすぐにスタートできます
           </h2>
           <div className="benefit_list container">
@@ -145,7 +154,8 @@ const IndexPage = () => {
                 className="img_icon"
               />
               <div className="benefit_item_text">
-                既存のスペース、<br />
+                既存のスペース、
+                <br />
                 人材でサービス開始可能です。
               </div>
             </div>
@@ -160,8 +170,10 @@ const IndexPage = () => {
                 className="img_icon"
               />
               <div className="benefit_item_text">
-                買い取った商品は<br />
-                タイムレスが仕入れます。<br />
+                買い取った商品は
+                <br />
+                タイムレスが仕入れます。
+                <br />
                 商品到着後すぐに代金を支払います。
               </div>
             </div>
@@ -176,7 +188,8 @@ const IndexPage = () => {
                 className="img_icon"
               />
               <div className="benefit_item_text">
-                タイムレスは提示した価格を<br />
+                タイムレスは提示した価格を
+                <br />
                 きちんと保証いたします！
               </div>
             </div>
@@ -191,7 +204,8 @@ const IndexPage = () => {
                 className="img_icon"
               />
               <div className="benefit_item_text">
-                タイムレスサポートスタッフにより<br />
+                タイムレスサポートスタッフにより
+                <br />
                 お客様は安心して買取ができます。
               </div>
             </div>
@@ -200,9 +214,12 @@ const IndexPage = () => {
             フランチャイズ加盟のようなロイヤリティの支払いも不要です。
           </div>
           <div className="attention">
-            ※1：PCやインターネット通信費用などはお客様負担となります<br />
-            ※2：商品到着から3営業日以内の振込になります<br />
-            ※3：一部の商品(盗品や法令違反品など)をのぞき買取金額を保障させていただきます<br />
+            ※1：PCやインターネット通信費用などはお客様負担となります
+            <br />
+            ※2：商品到着から3営業日以内の振込になります
+            <br />
+            ※3：一部の商品(盗品や法令違反品など)をのぞき買取金額を保障させていただきます
+            <br />
             ※4：査定時に適切な情報を得られないなどで、保障できない場合もあります
           </div>
         </section>
@@ -214,10 +231,14 @@ const IndexPage = () => {
             <table className="riskpart_table">
               <thead>
                 <tr>
-                  <th className="riskpart_table_title pc" aria-hidden="true"></th>
+                  <th
+                    className="riskpart_table_title pc"
+                    aria-hidden="true"
+                  ></th>
                   <th className="oc riskpart_table_data">一般的な買取FC</th>
                   <th className="tx riskpart_table_data">
-                    タイムレス<br className="sp" />
+                    タイムレス
+                    <br className="sp" />
                     エクスプレス
                   </th>
                 </tr>
@@ -226,78 +247,121 @@ const IndexPage = () => {
                 <tr>
                   <th className="pc">加盟料</th>
                   <td className="oc">
-                    <span className="sp">加盟料<br /></span>
+                    <span className="sp">
+                      加盟料
+                      <br />
+                    </span>
                     200万円~250万円
                   </td>
                   <td className="tx">
-                    <span className="sp">加盟料<br /></span>
+                    <span className="sp">
+                      加盟料
+                      <br />
+                    </span>
                     5万円※
                   </td>
                 </tr>
                 <tr>
                   <th className="pc">開業準備金</th>
                   <td className="oc">
-                    <span className="sp">開業準備金<br /></span>
+                    <span className="sp">
+                      開業準備金
+                      <br />
+                    </span>
                     50万円~400万円
                   </td>
                   <td className="tx">
-                    <span className="sp">開業準備金<br /></span>
+                    <span className="sp">
+                      開業準備金
+                      <br />
+                    </span>
                     無料
                   </td>
                 </tr>
                 <tr>
                   <th className="pc">研修費用</th>
                   <td className="oc">
-                    <span className="sp">研修費用<br /></span>
+                    <span className="sp">
+                      研修費用
+                      <br />
+                    </span>
                     100万円～200万円
                   </td>
                   <td className="tx">
-                    <span className="sp">研修費用<br /></span>
+                    <span className="sp">
+                      研修費用
+                      <br />
+                    </span>
                     無料
                   </td>
                 </tr>
                 <tr>
                   <th className="pc">物件費用</th>
                   <td className="oc">
-                    <span className="sp">物件費用<br /></span>
+                    <span className="sp">
+                      物件費用
+                      <br />
+                    </span>
                     100万円～300万円
                   </td>
                   <td className="tx">
-                    <span className="sp">物件費用<br /></span>
-                    無料<br />
+                    <span className="sp">
+                      物件費用
+                      <br />
+                    </span>
+                    無料
+                    <br />
                     既存店舗でサービス開始可能
                   </td>
                 </tr>
                 <tr>
                   <th className="pc">本部FCロイヤリティ</th>
                   <td className="oc">
-                    <span className="sp">本部FCロイヤリティ<br /></span>
+                    <span className="sp">
+                      本部FCロイヤリティ
+                      <br />
+                    </span>
                     月々30万円～
                   </td>
                   <td className="tx">
-                    <span className="sp">本部FCロイヤリティ<br /></span>
+                    <span className="sp">
+                      本部FCロイヤリティ
+                      <br />
+                    </span>
                     無料
                   </td>
                 </tr>
                 <tr>
                   <th className="riskpart_table_total pc">開業費用合計</th>
                   <td className="oc oc_total">
-                    <span className="sp">開業費用合計<br /></span>
+                    <span className="sp">
+                      開業費用合計
+                      <br />
+                    </span>
                     480万円～1,180万円
                   </td>
                   <td className="tx tx_total">
-                    <span className="sp">開業費用合計<br /></span>
+                    <span className="sp">
+                      開業費用合計
+                      <br />
+                    </span>
                     5万円
                   </td>
                 </tr>
               </tbody>
             </table>
-            <div className="attention"> ※一般入会のお客様には加盟金やロイヤリティが発生するケースがございます。<br />
-              ※ただし加盟料支払いで、のぼり、計りなどスタートに必要なキット5万円相当をお届けします。</div>
+            <div className="attention">
+              {" "}
+              ※一般入会のお客様には加盟金やロイヤリティが発生するケースがございます。
+              <br />
+              ※ただし加盟料支払いで、のぼり、計りなどスタートに必要なキット5万円相当をお届けします。
+            </div>
           </div>
           <div className="riskpart_necessities">
             <div className="text_center">
-              <div className="riskpart_necessities_title quote">これだけでスタートできます！</div>
+              <div className="riskpart_necessities_title quote">
+                これだけでスタートできます！
+              </div>
             </div>
             <ul className="riskpart_necessities_list container">
               <li className="riskpart_necessities_list_item">
@@ -308,7 +372,8 @@ const IndexPage = () => {
                   className="img_icon"
                 />
                 <p>
-                  店頭告知ツール<br />
+                  店頭告知ツール
+                  <br />
                   （のぼり等）
                 </p>
               </li>
@@ -320,7 +385,8 @@ const IndexPage = () => {
                   className="img_icon"
                 />
                 <p>
-                  ビデオ通話ができるPC<br />
+                  ビデオ通話ができるPC
+                  <br />
                   （Skype<sup className="sup">TM</sup>を利用）
                 </p>
               </li>
@@ -331,19 +397,23 @@ const IndexPage = () => {
                   alt="計りなどの小物類"
                   className="img_icon"
                 />
-                <p>
-                  計りなどの小物類
-                </p>
+                <p>計りなどの小物類</p>
               </li>
             </ul>
-            <div className="attention"> ※加盟料支払いで、のぼり、計りなどスタートに必要なキット5万円相当をお届けします。PCは自社でご用意願います。 </div>
+            <div className="attention">
+              {" "}
+              ※加盟料支払いで、のぼり、計りなどスタートに必要なキット5万円相当をお届けします。PCは自社でご用意願います。{" "}
+            </div>
           </div>
         </section>
 
         {/* サポートセクション */}
         <section className="step section js_fadeup_trigger">
-          <h2 className="section_title">充実したサポートで<br />
-            驚くほど簡単な買取ステップ！</h2>
+          <h2 className="section_title">
+            充実したサポートで
+            <br />
+            驚くほど簡単な買取ステップ！
+          </h2>
           <ol className="step_list container">
             <li className="step_list_item">
               <div className="step_item_title">Step1</div>
@@ -354,7 +424,8 @@ const IndexPage = () => {
                 className="img_icon"
               />
               <div className="step_item_text">
-                お客様から<br />
+                お客様から
+                <br />
                 査定する品物を預かる
               </div>
             </li>
@@ -366,8 +437,11 @@ const IndexPage = () => {
                 alt="Step02"
                 className="img_icon"
               />
-              <div className="step_item_text">タイムレスのシステムを使って<br />
-                商品確認と買取価格の算出</div>
+              <div className="step_item_text">
+                タイムレスのシステムを使って
+                <br />
+                商品確認と買取価格の算出
+              </div>
             </li>
             <li className="step_list_item">
               <div className="step_item_title">Step3</div>
@@ -377,8 +451,11 @@ const IndexPage = () => {
                 alt="Step03"
                 className="img_icon"
               />
-              <div className="step_item_text">買取価格をもとに<br />
-                お客様と契約</div>
+              <div className="step_item_text">
+                買取価格をもとに
+                <br />
+                お客様と契約
+              </div>
             </li>
             <li className="step_list_item">
               <div className="step_item_title">Step4</div>
@@ -389,7 +466,8 @@ const IndexPage = () => {
                 className="img_icon"
               />
               <div className="step_item_text">
-                買取した商品を<br />
+                買取した商品を
+                <br />
                 タイムレスに発送
               </div>
             </li>
@@ -397,15 +475,22 @@ const IndexPage = () => {
           <div className="text_center">
             <div className="step_footer_text quote">検品後、即ご入金！</div>
           </div>
-          <div className="attention"> ※査定のみのご依頼は受け付けておりません（不成立の場合を除く） </div>
+          <div className="attention">
+            {" "}
+            ※査定のみのご依頼は受け付けておりません（不成立の場合を除く）{" "}
+          </div>
         </section>
 
-        { /* 提携パートナーセクション */ }
+        {/* 提携パートナーセクション */}
         <section className="alliance section">
           <h2 className="section_title">提携パートナー</h2>
           <ul className="alliance_list">
             <li className="alliance_list_item">
-              <a href="https://www.carcon.co.jp/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.carcon.co.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StaticImage
                   src="../img/logo_carcon.co.jp.png"
                   loading="lazy"
@@ -421,14 +506,21 @@ const IndexPage = () => {
         {/* タイムレスセクション */}
         <section className="about section">
           <h2 className="section_title">タイムレスとは？</h2>
-          <div className="about_desc">株式会社BuySell Technologies(東証マザーズ上場）のグループ会社</div>
+          <div className="about_desc">
+            株式会社BuySell Technologies(東証マザーズ上場）のグループ会社
+          </div>
           <div className="about_list container">
             <div className="about_list_item">
               <div className="about_item_title">
-                総合買取サロン<br />
+                総合買取サロン
+                <br />
                 TIMELESSの運営
               </div>
-              <a href="https://timeless-kaitori.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://timeless-kaitori.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StaticImage
                   src="../img/kaitori_logo.svg"
                   loading="lazy"
@@ -437,18 +529,26 @@ const IndexPage = () => {
                 />
               </a>
               <div className="about_item_text">
-                全国の百貨店に店舗を構え、<br />
-                高品質な買取サービスを提供。<br />
-                全国11店舗展開<br />
+                全国の百貨店に店舗を構え、
+                <br />
+                高品質な買取サービスを提供。
+                <br />
+                全国11店舗展開
+                <br />
                 取引百貨店は50社以上！
               </div>
             </div>
             <div className="about_list_item">
               <div className="about_item_title">
-                タイムレスオークションの<br />
+                タイムレスオークションの
+                <br />
                 運営
               </div>
-              <a href="https://timeless-auction.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://timeless-auction.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <StaticImage
                   src="../img/auction_logo.svg"
                   loading="lazy"
@@ -457,15 +557,19 @@ const IndexPage = () => {
                 />
               </a>
               <div className="about_item_text">
-                年間取引点数20万点以上の<br />
-                BtoBオークションを運営。<br />
-                自社オークションで集まった相場情報をもとに<br />
+                年間取引点数20万点以上の
+                <br />
+                BtoBオークションを運営。
+                <br />
+                自社オークションで集まった相場情報をもとに
+                <br />
                 リアルな買取価格を提供可能！
               </div>
             </div>
             <div className="about_list_item">
               <div className="about_item_title">
-                全国の質屋<br />
+                全国の質屋
+                <br />
                 買取店との取引実績
               </div>
               <StaticImage
@@ -475,8 +579,10 @@ const IndexPage = () => {
                 className="img_icon"
               />
               <div className="about_item_text">
-                タイムレスエクスプレスは<br />
-                すでに全国500件以上のお客様に<br />
+                タイムレスエクスプレスは
+                <br />
+                すでに全国500件以上のお客様に
+                <br />
                 遠隔査定サービスを展開中です
               </div>
             </div>
@@ -490,7 +596,9 @@ const IndexPage = () => {
             <section className="market_section">
               <div className="market_section_contents">
                 <h3 className="market_contents_title">リユース市場推移</h3>
-                <div className="market_contents_text">リユース市場は順調に成長基調にあり、2017年で約2兆円。2025年に約3.2兆円規模まで成長。</div>
+                <div className="market_contents_text">
+                  リユース市場は順調に成長基調にあり、2017年で約2兆円。2025年に約3.2兆円規模まで成長。
+                </div>
               </div>
               <div className="market_section_images">
                 <StaticImage
@@ -499,15 +607,20 @@ const IndexPage = () => {
                   alt="リユース市場推移"
                   className="img_responsive"
                 />
-                <cite className="market_images_cite">出典：「データでみるリユース市場 最新版 」リサイクル通信2019年5月11日付調査結果</cite>
+                <cite className="market_images_cite">
+                  出典：「データでみるリユース市場 最新版
+                  」リサイクル通信2019年5月11日付調査結果
+                </cite>
               </div>
             </section>
             <section className="market_section">
               <div className="market_section_contents">
                 <h3 className="market_contents_title">かくれ資産</h3>
                 <div className="market_contents_text">
-                  潜在的なリユース市場規模を示す、「かくれ資産」の日本における総額は、2018年時点で約37兆円と推計。<br />
-                  かくれ資産として今後追加されることになる過去一年間に不要となった品物の規模も約7兆6,000億円と試算され、リユース市場の成長ポテンシャルは大きい。<br />
+                  潜在的なリユース市場規模を示す、「かくれ資産」の日本における総額は、2018年時点で約37兆円と推計。
+                  <br />
+                  かくれ資産として今後追加されることになる過去一年間に不要となった品物の規模も約7兆6,000億円と試算され、リユース市場の成長ポテンシャルは大きい。
+                  <br />
                   ※かくれ資産：自宅内の一年以上利用されていない不用品の推定価値
                 </div>
               </div>
@@ -518,7 +631,12 @@ const IndexPage = () => {
                   alt="かくれ資産"
                   className="img_responsive"
                 />
-                <cite className="market_images_cite">出典：「中古ビジネスデータブック2018 」リサイクル通信 、経済産業省「平成29年度 我が国におけるデータ駆動型社会に係る基盤整備（電子商取引に関する市場調査 ）、ニッセイ基礎研究所監修平成30年11月7日付調査結果より当社作成</cite>
+                <cite className="market_images_cite">
+                  出典：「中古ビジネスデータブック2018 」リサイクル通信
+                  、経済産業省「平成29年度
+                  我が国におけるデータ駆動型社会に係る基盤整備（電子商取引に関する市場調査
+                  ）、ニッセイ基礎研究所監修平成30年11月7日付調査結果より当社作成
+                </cite>
               </div>
             </section>
           </div>
@@ -528,16 +646,26 @@ const IndexPage = () => {
         <section className="contact section">
           <h2 className="section_title">お問い合わせ</h2>
           <div className="contact_desc">
-            サービスに関すること、取材のお問い合わせなどお気軽にご連絡くださいませ。<br />
-            <strong>お申込みは下記お問い合わせから可能です。</strong><br />
-            後日、担当者よりご連絡させていただきます。<br />
+            サービスに関すること、取材のお問い合わせなどお気軽にご連絡くださいませ。
+            <br />
+            <strong>お申込みは下記お問い合わせから可能です。</strong>
+            <br />
+            後日、担当者よりご連絡させていただきます。
+            <br />
           </div>
           <div className="contact_form">
-            <form name="contact" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              action="/thank-you"
+              netlify-honeypot="bot-field"
+            >
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>
-                  Don’t fill this out if you're human: <input name="bot-field" />
+                  Don’t fill this out if you're human:{" "}
+                  <input name="bot-field" />
                 </label>
               </p>
               <dl className="contact_form_dl">
@@ -572,7 +700,12 @@ const IndexPage = () => {
                     法人の方
                   </label>
                   <label className="contact_input_radio">
-                    <input type="radio" name="お客様種別" value="個人事業主の方" /> 個人事業主の方
+                    <input
+                      type="radio"
+                      name="お客様種別"
+                      value="個人事業主の方"
+                    />{" "}
+                    個人事業主の方
                   </label>
                 </dd>
               </dl>
@@ -590,7 +723,9 @@ const IndexPage = () => {
                 </dd>
               </dl>
               <dl className="contact_form_dl">
-                <dt className="contact_form_dt required">店舗名または法人名カナ</dt>
+                <dt className="contact_form_dt required">
+                  店舗名または法人名カナ
+                </dt>
                 <dd className="contact_form_dd">
                   <input
                     type="text"
@@ -687,7 +822,9 @@ const IndexPage = () => {
                 </dd>
               </dl>
               <dl className="contact_form_dl">
-                <dt className="contact_form_dt required">連絡用メールアドレス</dt>
+                <dt className="contact_form_dt required">
+                  連絡用メールアドレス
+                </dt>
                 <dd className="contact_form_dd">
                   <input
                     type="email"
@@ -754,7 +891,9 @@ const IndexPage = () => {
                     ＜個人情報をご入力するにあたっての注意事項＞
                   </dt>
                   <dd className="pinfo_text">
-                    <p>・必要事項が記載されていない場合、最適なご回答ができない場合があります。</p>
+                    <p>
+                      ・必要事項が記載されていない場合、最適なご回答ができない場合があります。
+                    </p>
                   </dd>
                 </dl>
                 <dl className="pinfo_list text_right">
@@ -779,7 +918,12 @@ const IndexPage = () => {
               <div className="contact_agreement">
                 <p className="text_center agreement_check">
                   <label>
-                    <input type="checkbox" name="個人情報の取り扱いについて同意する" required /> はい、同意しました。
+                    <input
+                      type="checkbox"
+                      name="個人情報の取り扱いについて同意する"
+                      required
+                    />{" "}
+                    はい、同意しました。
                   </label>
                 </p>
               </div>
