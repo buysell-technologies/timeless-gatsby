@@ -1,0 +1,18 @@
+<svg id="icon_step02" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="icon_step02-2" data-name="icon_step02">
+    <rect id="長方形_145" data-name="長方形 145" width="200" height="200" fill="none"/>
+    <path id="パス_227" data-name="パス 227" d="M89.07,102.24H16.68a3.1,3.1,0,0,0-3.1,3.1V184.9a3.1,3.1,0,0,0,3.1,3.1H89.07a3.1,3.1,0,0,0,3.1-3.1V105.34A3.1,3.1,0,0,0,89.07,102.24ZM86,181.79H19.78V108.44H86Z" transform="translate(-0.5)" fill="#ffab40"/>
+    <rect id="長方形_146" data-name="長方形 146" width="54.81" height="12.03" transform="translate(24.97 112.39)" fill="#ffab40"/>
+    <rect id="長方形_147" data-name="長方形 147" width="14.57" height="45.45" transform="translate(65.21 132.11)" fill="#ffab40"/>
+    <rect id="長方形_148" data-name="長方形 148" width="10.83" height="11.24" transform="translate(24.97 132.11)" fill="#ffab40"/>
+    <rect id="長方形_149" data-name="長方形 149" width="10.84" height="11.24" transform="translate(38.39 132.11)" fill="#ffab40"/>
+    <rect id="長方形_150" data-name="長方形 150" width="10.83" height="11.24" transform="translate(51.8 132.11)" fill="#ffab40"/>
+    <rect id="長方形_151" data-name="長方形 151" width="10.83" height="11.24" transform="translate(24.97 149.22)" fill="#ffab40"/>
+    <rect id="長方形_152" data-name="長方形 152" width="10.84" height="11.24" transform="translate(38.39 149.22)" fill="#ffab40"/>
+    <rect id="長方形_153" data-name="長方形 153" width="10.83" height="11.24" transform="translate(51.8 149.22)" fill="#ffab40"/>
+    <rect id="長方形_154" data-name="長方形 154" width="10.83" height="11.24" transform="translate(24.97 166.32)" fill="#ffab40"/>
+    <rect id="長方形_155" data-name="長方形 155" width="10.84" height="11.24" transform="translate(38.39 166.32)" fill="#ffab40"/>
+    <rect id="長方形_156" data-name="長方形 156" width="10.83" height="11.24" transform="translate(51.8 166.32)" fill="#ffab40"/>
+    <path id="パス_228" data-name="パス 228" d="M122.26,13a65.28,65.28,0,1,0,65.28,65.28A65.28,65.28,0,0,0,122.26,13Zm30,59.3V84h-22.6v5.39h22.61v11.74H129.66V111.7H114.72V101.17H92.26V89.43h22.46V84H92.26V72.3h16.62L91.82,44.81h16.7L122.3,66.25,136,44.81h16.7L135.13,72.3Z" transform="translate(-0.5)" fill="#ffab40"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg id="icon_point02" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="icon_point02-2" data-name="icon_point02">
+    <rect id="長方形_82" data-name="長方形 82" width="200" height="200" fill="none"/>
+    <path id="パス_115" data-name="パス 115" d="M14,109V64.31A14.91,14.91,0,0,0,24.65,53.62h122a14.93,14.93,0,0,0,10.69,10.69v1.07h7.48V46.13H6.48v81.06h21V119.7H24.65A14.9,14.9,0,0,0,14,109Z" transform="translate(-0.5)" fill="#ffab40"/>
+    <path id="パス_116" data-name="パス 116" d="M106.36,65.38a29.6,29.6,0,0,0-41.4,0Z" transform="translate(-0.5)" fill="#ffab40"/>
+    <path id="パス_117" data-name="パス 117" d="M114.1,83.62a29.72,29.72,0,1,0,29.71,29.717A29.72,29.72,0,0,0,114.1,83.62Zm16.1,27v6.31H118.05v2.9H130.2v6.31H118.05v5.68h-8v-5.68H98v-6.31h12v-2.9H98v-6.31h8.93L97.71,95.84h9l7.41,11.52,7.36-11.52h9L121,110.62Z" transform="translate(-0.5)" fill="#ffab40"/>
+    <path id="パス_118" data-name="パス 118" d="M34.91,72.81v81.06H193.27V72.81Zm150.88,62.88a14.93,14.93,0,0,0-10.69,10.69H53.1a14.94,14.94,0,0,0-10.7-10.69V91A14.93,14.93,0,0,0,53.09,80.3h122A14.91,14.91,0,0,0,185.79,91Z" transform="translate(-0.5)" fill="#ffab40"/>
+  </g>
+</svg>

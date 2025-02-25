@@ -1,0 +1,11 @@
+<svg id="icon_step04" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="icon_step04-2" data-name="icon_step04">
+    <rect id="長方形_102" data-name="長方形 102" width="200" height="200" fill="none"/>
+    <path id="パス_154" data-name="パス 154" d="M7,135.77H17.74a17.19,17.19,0,0,1,34.37,0H95.52a17.18,17.18,0,0,1,34.36,0h5a3.72,3.72,0,0,0,3.72-3.71V64.74A3.73,3.73,0,0,0,134.92,61h-76v9.24H30L7,101.93ZM34.16,78.4H50.78v23.53H17.08Z" transform="translate(-0.5)" fill="#ffab40"/>
+    <path id="パス_155" data-name="パス 155" d="M112.7,121.85a13.93,13.93,0,1,0,13.93,13.92,13.93,13.93,0,0,0-13.93-13.92Z" transform="translate(-0.5)" fill="#ffab40"/>
+    <path id="パス_156" data-name="パス 156" d="M34.93,121.85a13.93,13.93,0,1,0,13.92,13.923A13.93,13.93,0,0,0,34.93,121.85Z" transform="translate(-0.5)" fill="#ffab40"/>
+    <rect id="長方形_103" data-name="長方形 103" width="42.51" height="7.5" transform="translate(151.49 93.37)" fill="#ffab40"/>
+    <rect id="長方形_104" data-name="長方形 104" width="42.51" height="7.5" transform="translate(151.49 109.31)" fill="#ffab40"/>
+    <rect id="長方形_105" data-name="長方形 105" width="42.51" height="7.5" transform="translate(151.49 125.25)" fill="#ffab40"/>
+  </g>
+</svg>
