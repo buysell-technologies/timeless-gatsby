@@ -1,3 +1,4 @@
+const path = require("path")
 require("dotenv").config({
   path: ".env",
 })
@@ -16,7 +17,7 @@ exports.createPages = async ({ actions }) => {
     // 一覧ページ生成
     createPage({
       path: "/shops",
-      component: require.resolve("./src/templates/ShopsIndex.js"),
+      component: path.resolve("./src/templates/ShopsIndex.js"),
       context: {
         shops: data.contents,
       },
@@ -32,7 +33,7 @@ exports.createPages = async ({ actions }) => {
 
       createPage({
         path: `/shops/${shop.slug}`,
-        component: require.resolve("./src/templates/ShopDetail.js"),
+        component: path.resolve("./src/templates/ShopDetail.js"),
         context: {
           shop: ShopDetail, // テンプレートにまるごと渡す
         },
