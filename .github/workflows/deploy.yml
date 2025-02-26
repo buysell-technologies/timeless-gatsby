@@ -31,19 +31,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # 5. Gatsby の初期化
-      - name: Clean Gatsby build
-        run: gatsby clean
-
-      # 6. Gatsby をビルド
+      # 5. Gatsby をビルド
       - name: Build Gatsby site
         run: npm run build
 
-      # 7. Netlify CLI をインストール
+      # 6. Netlify CLI をインストール
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
-      # 8. Netlify にデプロイ
+      # 7. Netlify にデプロイ
       - name: Deploy to Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
