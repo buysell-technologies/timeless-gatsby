@@ -27,19 +27,27 @@ jobs:
         with:
           node-version: '20'
 
-      # 4. 依存関係をインストール
+      # 4. npm パッケージのキャッシュを初期化
+      - name: Clear npm cache
+        run: npm cache clean --force
+
+      # 5. Gatsby の初期化
+      - name: Clean Gatsby build
+        run: gatsby clean
+
+      # 6. 依存関係をインストール
       - name: Install dependencies
         run: npm install
 
-      # 5. Gatsby をビルド
+      # 7. Gatsby をビルド
       - name: Build Gatsby site
         run: npm run build
 
-      # 6. Netlify CLI をインストール
+      # 8. Netlify CLI をインストール
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
-      # 7. Netlify にデプロイ
+      # 9. Netlify にデプロイ
       - name: Deploy to Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
