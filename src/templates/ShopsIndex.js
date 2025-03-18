@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import Layout from "../components/Layout"
 import "../styles/kaitori_common.scss"
+import "../styles/kaitori_shops.scss"
 
 const ShopsIndex = ({ pageContext }) => {
   const { shops = [] } = pageContext // gatsby-node.js の createPage(context) から受け取ったデータ

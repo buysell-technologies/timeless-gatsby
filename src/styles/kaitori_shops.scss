@@ -1,0 +1,379 @@
+@use "_variables" as *;
+
+/* ------------------------------------------------------------------------------------------
+ Shop
+------------------------------------------------------------------------------------------ */
+.shop_section_first {
+  margin-top: 0;
+}
+
+.shop_section_first .article_section_title {
+  margin-top: 0;
+}
+
+.shop_title {
+  font-size: 1.6rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.shop_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.shop_list_item {
+  width: calc((100% / 3) - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #f3f0eb;
+}
+
+.shop_list_item_link {
+  display: block;
+}
+
+.shop_item_image {
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+}
+
+.shop_item_image img {
+  width: 100%;
+  height: auto;
+  transition: all 0.35s ease-in-out;
+}
+
+.shop_list_item_link:hover .shop_item_image img {
+  transform: scale(1.05);
+}
+
+.shop_item_body {
+  padding: 30px;
+}
+
+.shop_item_name {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.shop_item_more {
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.shop .shop_coupon {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.shop_list_row:first-child {
+  border-top: solid 1px #e0e0e0;
+}
+
+.shop_list_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #e0e0e0;
+  padding: 20px 10px;
+}
+
+.shop_list_col:nth-of-type(1) {
+  width: 35%;
+  padding-right: 10px;
+}
+
+.shop_list_col:nth-of-type(2) {
+  width: 50%;
+}
+
+.shop_list_col:nth-of-type(3) {
+  width: 15%;
+}
+
+.shop_list_col {
+
+  picture,
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.shop_item_link {
+  display: block;
+  border: solid 2px #0a162b;
+  color: #0a162b;
+  text-align: center;
+  padding: 5px 28px 5px 8px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-image: url(/img/lp/link_arrow_navy.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.shop_item_link:hover {
+  background-image: url(/img/lp/link_arrow_white.svg);
+  background-color: #0a162b;
+  color: #fff;
+}
+
+.shopp_item_add {
+  display: block;
+}
+
+.shop_other_time {
+  font-size: 0.9rem;
+  padding-top: 10px;
+  display: block;
+  width: 80%;
+}
+
+.shopp_item_biz_hours {
+  display: block;
+}
+
+.shopp_tel {
+  display: block;
+}
+
+/* SP */
+@media only screen and (max-width: $breakpoint_sp) {
+  .shop_list_row {
+    flex-flow: column;
+  }
+
+  .shop_list_row .shop_list_col {
+    width: 100%;
+    padding: 0;
+  }
+
+  .shop_item_img_link img {
+    margin: 10px auto;
+  }
+
+  .shopp_item_biz_hours {
+    display: block;
+  }
+
+  .shopp_item_tel {
+    display: block;
+  }
+
+  .shop_list {
+    margin-top: 30px;
+  }
+
+  .shop_list_item {
+    width: calc((100% / 2) - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: #f3f0eb;
+  }
+
+  .shop_item_body {
+    padding: 10px;
+  }
+
+  .shop_item_name {
+    font-size: 1.2rem;
+  }
+
+  .shop_item_more {
+    font-size: 0.9rem;
+  }
+
+  .shop_other_time {
+    width: 100%;
+  }
+}
+
+/* Shop - single
+  --------------------------------------------- */
+.shop_single {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop_single_image {
+  width: 50%;
+}
+
+.shop_single_image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.shop_single_info {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.shop_single_info_item {
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.shop_single_info_item:first-child {
+  padding-top: 0;
+}
+
+.shop_single_info_item_title {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.shop_single_info_item_data {
+  margin-top: 10px;
+}
+
+.shop_single_info_item_data .btn {
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.shop_single_info_item_data .btn_text {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.shop_annotation {
+  font-size: 0.9rem;
+}
+
+/* SP */
+@media only screen and (max-width: $breakpoint_sp) {
+  .shop_single_image {
+    width: 100%;
+  }
+
+  .shop_single_info {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.shop_freespace {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.shop_freespace img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Shop - area sort
+  --------------------------------------------- */
+.area_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.area_select {
+  flex: auto;
+  width: 30%;
+  border: solid 1px #999;
+  text-align: center;
+  background: #f2f2f2;
+  padding: 10px;
+}
+
+.area_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 70%;
+  border: solid 1px #999;
+  border-left: none;
+  padding: 10px;
+}
+
+.area_item {
+  text-align: center;
+
+  /* width: calc(100% / 6); */
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.area_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.area_link:hover {
+  text-decoration: underline;
+}
+
+.area_select_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* SP */
+@media only screen and (max-width: $breakpoint_sp) {
+  .area_wrap {
+    flex-flow: column;
+  }
+
+  .area_select {
+    width: 100%;
+  }
+
+  .area_list {
+    display: none;
+    width: 100%;
+    padding: 0;
+    border: none;
+    flex-flow: column;
+    margin-bottom: 20px;
+  }
+
+  .area_select.js_accordion_trigger {
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-image: url(/img/accordion_open.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    border: solid 1px #999;
+    padding: 15px;
+  }
+
+  .area_select.js_accordion_trigger.is_active {
+    background-image: url(/img/accordion_close.svg);
+  }
+
+  .area_item {
+    border-left: solid 1px #999;
+    border-right: solid 1px #999;
+    border-bottom: solid 1px #999;
+    border-top: none;
+    padding: 10px;
+    width: 100%;
+  }
+}

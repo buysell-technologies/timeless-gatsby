@@ -18,9 +18,9 @@ const Footer = () => {
       </div>
       <div className="footer_logo">
         <a className="link" href="/">
-          <StaticImage
-            src="/img/logo_white.svg"
-            formats={["auto", "webp", "avif"]}
+          <img
+            src="../img/logo_white.svg"
+            formats="auto"
             alt="総合買取サロンタイムレス"
             className="img_responsive"
             width="100"
@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <p className="text_center">
         <StaticImage
-          src="/img/privacymark.png"
+          src="../img/privacymark.png"
           formats={["auto", "webp", "avif"]}
           alt="プライバシーマーク"
           className="pmark_img"

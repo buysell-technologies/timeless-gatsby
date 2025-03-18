@@ -17,9 +17,8 @@ const Header = () => {
       <div className="header_navi">
         <div className="header_logo">
           <a className="link" href="/">
-            <StaticImage
+            <img
               src="/img/header_logo.svg"
-              formats={["auto", "webp", "avif"]}
               alt="総合買取サロンタイムレス"
               className="header_logo_img"
               width="175"
