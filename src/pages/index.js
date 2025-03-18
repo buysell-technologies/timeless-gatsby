@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
-import "../styles/common.scss"
+import "../styles/express_common.scss"
 
 const IndexPage = () => {
   const schemaData = {

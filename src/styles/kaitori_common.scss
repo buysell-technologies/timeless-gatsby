@@ -1,0 +1,261 @@
+/* ------------------------------------------------------------------------------------- */
+/* Reset */
+/* ------------------------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+a {
+  color: #0a162b;
+  text-decoration: none;
+}
+
+b {
+  font-weight: 600;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGP明朝B, serif;
+}
+
+strong {
+  font-weight: 800;
+}
+
+main {
+  display: block;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Base */
+/* ------------------------------------------------------------------------------------- */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
+
+body {
+  background-attachment: scroll;
+  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGP明朝B, serif;
+  font-size: 100%;
+  color: #0a162b;
+  line-height: 1.7;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+}
+
+/* SP */
+@media only screen and (max-width: 375px) {
+  html {
+    font-size: 4vw;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------
+   Common
+  ------------------------------------------------------------------------------------------ */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_kaitori {
+  width: 100%;
+  max-width: 1400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Section
+  --------------------------------------------- */
+.section_title {
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.section_title:after {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #0a162b;
+  display: block;
+  position: absolute;
+  bottom: -25px;
+}
+
+.section_title.white {
+  color: #fff;
+}
+
+.section_title.white:after {
+  background-color: #fff;
+}
+
+/* SP */
+@media only screen and (max-width: 768px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section_title {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+}
+
+/* Image
+  --------------------------------------------- */
+.img_responsive {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+/* List
+  --------------------------------------------- */
+.list {
+  margin-left: 20px;
+  list-style-position: outside;
+}
+
+ul.list {
+  list-style-type: disc;
+}
+
+ol.list {
+  list-style-type: decimal;
+}
+
+/* Button
+  --------------------------------------------- */
+.btn {
+  border: 1px solid #0a162b;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  text-align: center;
+  background: #fff;
+  margin-top: 50px;
+}
+
+.btn_text {
+  width: 100%;
+  height: 100%;
+  color: #0a162b;
+  z-index: 1;
+  font-size: 0.9rem;
+  padding: 15px 0;
+  transition: .2s;
+  position: relative;
+}
+
+.btn_text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #0a162b;
+  z-index: -1;
+  transition: .2s;
+}
+
+.btn_text:hover {
+  color: #fff;
+}
+
+.btn_text:hover:before {
+  width: 100%;
+}
+
+/* SP */
+@media only screen and (max-width: 768px) {
+  .btn {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  .btn_text {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
+
+/* fade
+  --------------------------------------------- */
+.js_fadein.js_scrollin {
+  transform: translate(0, 0);
+  transition: all 2s;
+}
+
+.fadein--up {
+  transform: translate(0, 50px);
+}
+
+.fadein--right {
+  transform: translate(100px, 0);
+}
+
+.fadein--left {
+  transform: translate(-100px, 0);
+}
+
+/* PC */
+@media only screen and (min-width: 769px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+/* SP */
+@media only screen and (max-width: 768px) {
+  .pc {
+    display: none !important;
+  }
+}
