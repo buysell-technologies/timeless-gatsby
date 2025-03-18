@@ -5,16 +5,16 @@ import Layout from "../components/Layout"
 import "../styles/kaitori_common.scss"
 
 const ShopsIndex = ({ pageContext }) => {
-  const { shops } = pageContext // gatsby-node.js の createPage(context) から受け取ったデータ
+  const { shops = [] } = pageContext // gatsby-node.js の createPage(context) から受け取ったデータ
   const [selectedArea, setSelectedArea] = useState(null)
   const [isAccordionOpen, setIsAccordionOpen] = useState(false)
 
   // Extract unique areas from shops data
-  const areas = [...new Set(shops.flatMap(shop => shop.area))]
+  const areas = [...new Set((shops || []).flatMap(shop => shop.area || []))]
 
   // Group shops by area
   const shopsByArea = areas.reduce((acc, area) => {
-    acc[area] = shops.filter(shop => shop.area.includes(area))
+    acc[area] = (shops || []).filter(shop => (shop.area || []).includes(area))
     return acc
   }, {})
 
