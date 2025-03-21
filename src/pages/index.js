@@ -83,7 +83,7 @@ const IndexPage = () => {
   }, [])
   return (
     <>
-      <Helmet htmlAttributes={{ lang: "ja" }}>
+      <Helmet htmlAttributes={{ lang: "ja", class: "express" }}>
         <title>
           タイムレスエクスプレス - 【タイムレス】の査定システムが
           買取事業への参入障壁を解決します

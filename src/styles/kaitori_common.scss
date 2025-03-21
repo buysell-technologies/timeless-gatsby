@@ -1,261 +1,299 @@
-/* ------------------------------------------------------------------------------------- */
-/* Reset */
-/* ------------------------------------------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  box-sizing: border-box;
-  font-weight: 100;
-}
 
-a {
-  color: #0a162b;
-  text-decoration: none;
-}
+// エクスプレスと分断したいため、一時的に kaitori という名前をつける
+html.kaitori {
+  /* ------------------------------------------------------------------------------------- */
+  /* Reset */
+  /* ------------------------------------------------------------------------------------- */
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+    font-weight: 100;
+  }
 
-b {
-  font-weight: 600;
-}
+  a {
+    color: #0a162b;
+    text-decoration: none;
+  }
 
-ul,
-ol {
-  list-style: none;
-}
+  b {
+    font-weight: 600;
+  }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+  ul,
+  ol {
+    list-style: none;
+  }
 
-input,
-select {
-  vertical-align: middle;
-}
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 
-input,
-textarea,
-select {
-  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGP明朝B, serif;
-}
+  input,
+  select {
+    vertical-align: middle;
+  }
 
-strong {
-  font-weight: 800;
-}
+  input,
+  textarea,
+  select {
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGP明朝B, serif;
+  }
 
-main {
-  display: block;
-}
+  strong {
+    font-weight: 800;
+  }
 
-/* ------------------------------------------------------------------------------------- */
-/* Base */
-/* ------------------------------------------------------------------------------------- */
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-  scroll-padding-top: 200px;
-}
+  main {
+    display: block;
+    padding-top: 100px;
+    background-color: #fff;
+  }
 
-body {
-  background-attachment: scroll;
-  font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGP明朝B, serif;
-  font-size: 100%;
-  color: #0a162b;
-  line-height: 1.7;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  font-feature-settings: "palt";
-}
-
-/* SP */
-@media only screen and (max-width: 375px) {
+  /* ------------------------------------------------------------------------------------- */
+  /* Base */
+  /* ------------------------------------------------------------------------------------- */
   html {
-    font-size: 4vw;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
   }
-}
 
-/* ------------------------------------------------------------------------------------------
-   Common
-  ------------------------------------------------------------------------------------------ */
-.container {
-  width: 100%;
-  max-width: 1240px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  body {
+    background-attachment: scroll;
+    font-family: "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGP明朝B, serif;
+    font-size: 100%;
+    color: #0a162b;
+    line-height: 1.7;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "palt";
+  }
 
-.container_kaitori {
-  width: 100%;
-  max-width: 1400px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  /* SP */
+  @media only screen and (max-width: 375px) {
+    html {
+      font-size: 4vw;
+    }
+  }
 
-.cf:after {
-  content: "";
-  display: block;
-  clear: both;
-}
+  /* ------------------------------------------------------------------------------------------
+    Common
+    ------------------------------------------------------------------------------------------ */
+  .container {
+    width: 100%;
+    max-width: 1240px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.no-scroll {
-  overflow: hidden;
-}
+  .container_kaitori {
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* Section
-  --------------------------------------------- */
-.section_title {
-  font-size: 2.5rem;
-  margin-bottom: 70px;
-  position: relative;
-}
+  .cf:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 
-.section_title:after {
-  content: "";
-  height: 1px;
-  width: 50px;
-  background-color: #0a162b;
-  display: block;
-  position: absolute;
-  bottom: -25px;
-}
+  .no-scroll {
+    overflow: hidden;
+  }
 
-.section_title.white {
-  color: #fff;
-}
+  .breadcrumbs {
+    padding: 5px 10px 10px;
+    font-size: 12px;
+  
+    > span > span {
+      margin: 0 0.5em;
+  
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  
+    a {
+      text-decoration:underline;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .breadcrumbs {
+      font-size: 16px;
+      padding: 20px 20px 10px;
+    }
+  }
 
-.section_title.white:after {
-  background-color: #fff;
-}
-
-/* SP */
-@media only screen and (max-width: 768px) {
+  /* Section
+    --------------------------------------------- */
   .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
 
+  
   .section_title {
-    font-size: 1.5rem;
-    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 80px;
+    position: relative;
   }
-}
 
-/* Image
-  --------------------------------------------- */
-.img_responsive {
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-}
+  .section_title:after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: -25px;
+  }
 
-/* List
-  --------------------------------------------- */
-.list {
-  margin-left: 20px;
-  list-style-position: outside;
-}
+  .section_title.white {
+    color: #fff;
+  }
 
-ul.list {
-  list-style-type: disc;
-}
+  .section_title.white:after {
+    background-color: #fff;
+  }
 
-ol.list {
-  list-style-type: decimal;
-}
+  /* SP */
+  @media only screen and (max-width: 768px) {
+    .section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 
-/* Button
-  --------------------------------------------- */
-.btn {
-  border: 1px solid #0a162b;
-  width: 100%;
-  max-width: 300px;
-  display: flex;
-  text-align: center;
-  background: #fff;
-  margin-top: 50px;
-}
+    .section_title {
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+    }
+  }
 
-.btn_text {
-  width: 100%;
-  height: 100%;
-  color: #0a162b;
-  z-index: 1;
-  font-size: 0.9rem;
-  padding: 15px 0;
-  transition: .2s;
-  position: relative;
-}
+  /* Image
+    --------------------------------------------- */
+  .img_responsive {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
 
-.btn_text:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  display: block;
-  background: #0a162b;
-  z-index: -1;
-  transition: .2s;
-}
+  /* List
+    --------------------------------------------- */
+  .list {
+    margin-left: 20px;
+    list-style-position: outside;
+  }
 
-.btn_text:hover {
-  color: #fff;
-}
+  ul.list {
+    list-style-type: disc;
+  }
 
-.btn_text:hover:before {
-  width: 100%;
-}
+  ol.list {
+    list-style-type: decimal;
+  }
 
-/* SP */
-@media only screen and (max-width: 768px) {
+  /* Button
+    --------------------------------------------- */
   .btn {
+    border: 1px solid #0a162b;
+    width: 100%;
     max-width: 300px;
-    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    background: #fff;
+    margin-top: 50px;
   }
 
   .btn_text {
+    width: 100%;
+    height: 100%;
+    color: #0a162b;
+    z-index: 1;
+    font-size: 0.9rem;
     padding: 15px 0;
-    font-size: 1rem;
+    transition: .2s;
+    position: relative;
   }
-}
 
-/* fade
-  --------------------------------------------- */
-.js_fadein.js_scrollin {
-  transform: translate(0, 0);
-  transition: all 2s;
-}
-
-.fadein--up {
-  transform: translate(0, 50px);
-}
-
-.fadein--right {
-  transform: translate(100px, 0);
-}
-
-.fadein--left {
-  transform: translate(-100px, 0);
-}
-
-/* PC */
-@media only screen and (min-width: 769px) {
-  .sp {
-    display: none !important;
+  .btn_text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #0a162b;
+    z-index: -1;
+    transition: .2s;
   }
-}
 
-/* SP */
-@media only screen and (max-width: 768px) {
-  .pc {
-    display: none !important;
+  .btn_text:hover {
+    color: #fff;
+  }
+
+  .btn_text:hover:before {
+    width: 100%;
+  }
+
+  /* SP */
+  @media only screen and (max-width: 768px) {
+    .btn {
+      max-width: 300px;
+      margin-top: 30px;
+    }
+
+    .btn_text {
+      padding: 15px 0;
+      font-size: 1rem;
+    }
+  }
+
+  /* fade
+    --------------------------------------------- */
+  .js_fadein.js_scrollin {
+    transform: translate(0, 0);
+    transition: all 2s;
+  }
+
+  .fadein--up {
+    transform: translate(0, 50px);
+  }
+
+  .fadein--right {
+    transform: translate(100px, 0);
+  }
+
+  .fadein--left {
+    transform: translate(-100px, 0);
+  }
+
+  /* PC */
+  @media only screen and (min-width: 769px) {
+    .sp {
+      display: none !important;
+    }
+  }
+
+  /* SP */
+  @media only screen and (max-width: 768px) {
+    .pc {
+      display: none !important;
+    }
   }
 }

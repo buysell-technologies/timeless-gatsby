@@ -8,7 +8,7 @@ const ShopDetail = ({ pageContext }) => {
 
   return (
     <>
-      <Helmet htmlAttributes={{ lang: "ja" }}>
+      <Helmet htmlAttributes={{ lang: "ja", class: "kaitori" }}>
         <title>{shop.title} - 買取サロンタイムレス</title>
         <meta name="description" content={shop.description} />
         <meta name="robots" content="noindex, nofollow" />

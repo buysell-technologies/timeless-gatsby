@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
 import "../styles/kaitori_footer.scss";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -57,16 +56,17 @@ const Footer = () => {
         〈古物営業法に基づく表示〉<br />
         東京都公安委員会許可 第 301100907630 号 ㈱タイムレス
       </div>
-      <p className="text_center">
+      <div className="footer_privacy">
         <StaticImage
           src="../img/privacymark.png"
           formats={["auto", "webp", "avif"]}
-          alt="プライバシーマーク"
-          className="pmark_img"
+          loading="lazy"
           width="80"
           height="80"
+          alt="プライバシーマーク"
+          className="pmark_img"
         />
-      </p>
+      </div>
       <div className="copyright">&copy; 2025 TIMELESS</div>
     </footer>
   );
