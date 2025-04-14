@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="footer_logo">
         <a className="link" href="/">
           <img
-            src="../img/logo_white.svg"
+            src="/img/logo_white.svg"
             formats="auto"
             alt="総合買取サロンタイムレス"
             className="img_responsive"

@@ -38,7 +38,7 @@ const Header = () => {
               <a className="link" href="/news/">お知らせ</a>
             </li>
             <li className="header_gnavi_list_item">
-              <a className="link" href="/shop/">店舗一覧</a>
+              <a className="link" href="/shops/">店舗一覧</a>
             </li>
             <li className="header_gnavi_list_item">
               <a className="link" href="/event/">催事一覧</a>
