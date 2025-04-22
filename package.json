@@ -48,5 +48,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "overrides": {
+    "cookie": "^0.7.1"
   }
 }
